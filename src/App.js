@@ -1,13 +1,10 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import {Button} from 'structure-lib'
 
 function App() {
   return (
     <div className="App">
-      <Button
-      text={`The button`}
-      />
     </div>
   );
 }

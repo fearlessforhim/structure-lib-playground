@@ -1,0 +1,28 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+$primary-color: #078390;
+$primary-color-light: lighten($primary-color, 10);
+$primary-color-extra-light: lighten($primary-color, 15);
+
+.App {
+  height: 100%;
+  font-family: sans-serif;
+}
