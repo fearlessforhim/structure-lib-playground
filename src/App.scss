@@ -11,18 +11,34 @@ body {
 
 #root {
   height: 100%;
-  padding: 10px;
   box-sizing: border-box;
 }
 
 #app {
   height: 100%;
 }
+
 $primary-color: #078390;
 $primary-color-light: lighten($primary-color, 10);
 $primary-color-extra-light: lighten($primary-color, 15);
 
-.App {
+.app-root {
   height: 100%;
   font-family: sans-serif;
+
+  --primary-color: #{$primary-color};
+  --primary-color-light: #{$primary-color-light};
+  --primary-color-extra-light: #{$primary-color-extra-light};
+
+  --page-bg: #DFDFDF;
+
+  &.dark {
+    --page-bg: #282828;
+  }
+}
+
+.page-wrap {
+  height: 100%;
+  padding: 10px;
+  background: var(--page-bg, orange);
 }
