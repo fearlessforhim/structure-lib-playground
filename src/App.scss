@@ -31,9 +31,11 @@ $primary-color-extra-light: lighten($primary-color, 15);
   --primary-color-extra-light: #{$primary-color-extra-light};
 
   --page-bg: #DFDFDF;
+  --font-color: black;
 
   &.dark {
     --page-bg: #282828;
+    --font-color: white;
   }
 }
 
@@ -41,4 +43,5 @@ $primary-color-extra-light: lighten($primary-color, 15);
   height: 100%;
   padding: 10px;
   background: var(--page-bg, orange);
+  color: var(--font-color);
 }
