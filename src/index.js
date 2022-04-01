@@ -3,6 +3,8 @@ import {createRoot} from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+window.React1 = require('react');
+
 let root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

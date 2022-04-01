@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.scss';
-import {Button} from 'structure-lib'
+import {YesNoToggle, Tabs} from 'structure-lib'
 
 function App() {
 
@@ -9,16 +9,25 @@ function App() {
   return (
     <div className={`app-root ${useDark ? `dark` : ``}`}>
       <div className={`page-wrap`}>
-        <span
-          onClick={() => {setUseDark(false);}}
+        <Tabs
+          tabs={[
+            {
+              key: `tab1`,
+              title: `Buttons`,
+              component: <div className={`buttons-component`}/>
+            }
+          ]}
+        />
+        <div
+          className={`light-dark-toggle`}
         >
-          Light
-        </span>
-        <span
-          onClick={() => {setUseDark(true);}}
-        >
-          Dark
-        </span>
+          <YesNoToggle
+            onIcon={`fa-sun`}
+            offIcon={`fa-regular fa-sun`}
+            value={useDark}
+            onChange={setUseDark}
+          />
+        </div>
       </div>
     </div>
   );
