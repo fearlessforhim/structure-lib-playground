@@ -50,6 +50,7 @@ $primary-color-extra-dark: lighten($primary-color, 15);
   padding: 10px;
   background: var(--page-bg, orange);
   color: var(--font-color);
+  box-sizing: border-box;
 }
 
 .light-dark-toggle {
