@@ -22,6 +22,9 @@ $primary-color: #078390;
 $primary-color-light: lighten($primary-color, 10);
 $primary-color-extra-light: lighten($primary-color, 15);
 
+$primary-color-dark: darken($primary-color, 10);
+$primary-color-extra-dark: lighten($primary-color, 15);
+
 .app-root {
   height: 100%;
   font-family: sans-serif;
@@ -29,6 +32,9 @@ $primary-color-extra-light: lighten($primary-color, 15);
   --primary-color: #{$primary-color};
   --primary-color-light: #{$primary-color-light};
   --primary-color-extra-light: #{$primary-color-extra-light};
+
+  --primary-color-dark: #{$primary-color-dark};
+  --primary-color-extra-light: #{$primary-color-extra-dark};
 
   --page-bg: #DFDFDF;
   --font-color: black;
