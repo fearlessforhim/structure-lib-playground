@@ -1,0 +1,15 @@
+.playground-buttons-tab {
+  height: 100%;
+  padding: 10px;
+
+  .structure-lib-button-wrap + .structure-lib-button-wrap,
+  .structure-lib-button-wrap + .yes-no-toggle-wrap,
+  .yes-no-toggle-wrap + .yes-no-toggle-wrap,
+  .yes-no-toggle-wrap + .partial-width-div {
+    margin-top: 5px;
+  }
+
+  .partial-width-div {
+    width: 20%;
+  }
+}

@@ -18,12 +18,12 @@ body {
   height: 100%;
 }
 
-$primary-color: #078390;
+$primary-color: #0996a5;
 $primary-color-light: lighten($primary-color, 10);
 $primary-color-extra-light: lighten($primary-color, 15);
 
-$primary-color-dark: darken($primary-color, 10);
-$primary-color-extra-dark: lighten($primary-color, 15);
+$primary-color-dark: darken($primary-color, 5);
+$primary-color-extra-dark: darken($primary-color, 10);
 
 .app-root {
   height: 100%;
@@ -34,7 +34,7 @@ $primary-color-extra-dark: lighten($primary-color, 15);
   --primary-color-extra-light: #{$primary-color-extra-light};
 
   --primary-color-dark: #{$primary-color-dark};
-  --primary-color-extra-light: #{$primary-color-extra-dark};
+  --primary-color-extra-dark: #{$primary-color-extra-dark};
 
   --page-bg: #DFDFDF;
   --font-color: black;
