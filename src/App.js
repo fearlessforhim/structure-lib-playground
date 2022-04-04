@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.scss';
 import {YesNoToggle, Tabs} from 'structure-lib';
 import ButtonsTab from './buttons/ButtonsTab.js';
+import DataInputsTab from './data-inputs/DataInputsTab.js'
 
 function App() {
 
@@ -15,12 +16,12 @@ function App() {
             {
               key: `buttons`,
               title: `Buttons`,
-              component: <ButtonsTab/>
+              component: ButtonsTab
             },
             {
               key: `data-input`,
               title: `Data Input`,
-              component: <div className={`buttons-component`}/>
+              component: DataInputsTab
             },
           ]}
         />
