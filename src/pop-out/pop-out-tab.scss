@@ -1,0 +1,7 @@
+.pop-out-tab {
+  padding: 10px;
+
+  > .button-wrap + .button-wrap {
+    margin-top: 5px;
+  }
+}

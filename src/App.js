@@ -2,7 +2,9 @@ import React, {useState} from 'react';
 import './App.scss';
 import {YesNoToggle, Tabs} from 'structure-lib';
 import ButtonsTab from './buttons/ButtonsTab.js';
-import DataInputsTab from './data-inputs/DataInputsTab.js'
+import DataInputsTab from './data-inputs/DataInputsTab.js';
+import PopOutTab from './pop-out/PopOutTab.js';
+import TableTab from './table/TableTab.js';
 
 function App() {
 
@@ -23,7 +25,18 @@ function App() {
               title: `Data Input`,
               component: DataInputsTab
             },
+            {
+              key: `pop-outs`,
+              title: `Pop Out`,
+              component: PopOutTab
+            },
+            {
+              key: `tables`,
+              title: `Tables`,
+              component: TableTab
+            }
           ]}
+          selectedTabKey={`tables`}
         />
         <div
           className={`light-dark-toggle`}

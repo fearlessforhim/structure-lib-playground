@@ -36,12 +36,24 @@ $primary-color-extra-dark: darken($primary-color, 10);
   --primary-color-dark: #{$primary-color-dark};
   --primary-color-extra-dark: #{$primary-color-extra-dark};
 
+  $panel-base: #CBCBCB;
+
+  --panel-background: #{$panel-base};
+  --panel-background-dark: #{darken($panel-base, 10)};
+  --panel-background-extra-dark: #{darken($panel-base, 15)};
+
   --page-bg: #DFDFDF;
   --font-color: black;
 
   &.dark {
     --page-bg: #282828;
     --font-color: white;
+
+    $panel-base: #777;
+
+    --panel-background: #{$panel-base};
+    --panel-background-dark: #{darken($panel-base, 10)};
+    --panel-background-extra-dark: #{darken($panel-base, 15)};
   }
 }
 

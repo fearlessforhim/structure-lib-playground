@@ -1,0 +1,15 @@
+.table-tab {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+
+  .table-container {
+    margin-top: 10px;
+    flex: 1;
+    overflow: auto;
+
+  }
+}
