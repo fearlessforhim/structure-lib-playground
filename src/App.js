@@ -5,6 +5,7 @@ import ButtonsTab from './buttons/ButtonsTab.js';
 import DataInputsTab from './data-inputs/DataInputsTab.js';
 import PopOutTab from './pop-out/PopOutTab.js';
 import TableTab from './table/TableTab.js';
+import WizardTab from './wizard/WizardTab.js';
 
 function App() {
 
@@ -34,9 +35,14 @@ function App() {
               key: `tables`,
               title: `Tables`,
               component: TableTab
+            },
+            {
+              key: `wizard`,
+              title: `Wizard`,
+              component: WizardTab
             }
           ]}
-          selectedTabKey={`tables`}
+          selectedTabKey={`wizard`}
         />
         <div
           className={`light-dark-toggle`}
